@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr" ><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sponsorluk Bilgi Formu</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+ <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <!--Main CSS Files-->
+  <link href="css/styles.css" rel="stylesheet" />
+
+<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<!-- =======================================================
+  * Author: Yasemin Tugba Algin
+  ======================================================== -->
+</head>
+<body>
+
+    <section class="inner-page">
+      <div class="container">
+
+        <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Sponsorluk Bilgi Formu</h2>
+                    <p class="section-subheading text-muted">Bize destek olmak isterseniz bu başvuru ve bilgi formunu doldurabilirsiniz. <a href="index.html#contact"> Detaylı bilgi almak istiyorsanız tıklayın.</a></p>
+                </div>
+
+          <div class="row align-items-stretch mb-5">
+
+            <form action="forms/contactx.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Adınız | Soyadınız" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email Adresiniz" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" required>
+              </div>
+								<div class="form-group mt-3"><select id="talep" name="talep" required>
+<option selected="">Lütfen Seçiniz</option>
+<option value="Sponsorluk İsteği">Sponsor olmak istiyorum</option>
+<option value="Bilgi Talebi">Sponsorluk hakkında bilgi almak istiyorum</option>
+</select></div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Talebiniz (Bizden beklentinizi detaylı olarak açıklayın.)" required></textarea>
+              </div>
+				<div class="custom-checkbox">
+   <input class="checkbox" type="checkbox" id="checkbox">
+   <label class="custom-checkbox-label" for="checkbox"></label>
+   Web sitesi Kullanım Şartları'nı ve Gizlilik Politikası'nı okudum, onaylıyorum.
+</div>
+              <div class="my-3">
+                <div class="loading">Yükleniyor...</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Sponsorluk talebiniz gönderildi. En geç 24 saat içinde size döneceğiz.</div>
+              </div>
+              <div class="text-center"><button type="submit">Talebi Gönder</button></div>
+            </form>  </div>
+
+      </div>
+    </section>
+
+
+ <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+	
+	
+</body>
+</html>
